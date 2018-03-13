@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && concurrently --kill-others 'tsc --watch' 'webpack-dev-server --open'",
+    "start": "tsc",
+    "webpack": "webpack-dev-server --open",
     "compile": "tsc --watch",
     "bundle": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +19,7 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "csvtojson": "^1.1.9",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
